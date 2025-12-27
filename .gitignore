@@ -1,0 +1,13 @@
+# Dependency (Library) - Jangan diupload, Render akan install sendiri
+node_modules/
+
+# Environment Variables - PENTING: Berisi Password Database!
+.env
+
+# Logs
+npm-debug.log
+*.log
+
+# OS Files (Sampah sistem operasi)
+.DS_Store
+Thumbs.db
