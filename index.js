@@ -23,6 +23,12 @@ app.get('/', (req, res) => {
     res.send('Server Absensi Modular Siap! 🚀');
 });
 
-app.listen(port, () => {
-    console.log(`Server berjalan di port ${port}`);
-});
+// Cek apakah kode ini jalan di Vercel atau di Laptop (Local)
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server berjalan di port ${port}`);
+    });
+}
+
+// PENTING: Wajib export app untuk Vercel
+module.exports = app;
