@@ -30,5 +30,10 @@ if (require.main === module) {
     });
 }
 
+const faceRoutes = require('./routes/faceRoutes');
+
+app.use('/face', faceRoutes);
+
+
 // PENTING: Wajib export app untuk Vercel
 module.exports = app;
